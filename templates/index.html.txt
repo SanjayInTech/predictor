@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Price Predictor</title>
+</head>
+<body>
+
+<h2>Price Predictor</h2>
+
+<form action="/predict" method="post">
+    Demand: <input type="text" name="demand"><br><br>
+    Competitor Price: <input type="text" name="competitor"><br><br>
+    Season: <input type="text" name="season"><br><br>
+
+    <input type="submit" value="Predict">
+</form>
+
+<h3>{{ result }}</h3>
+
+</body>
+</html>
